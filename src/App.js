@@ -1,13 +1,26 @@
+import React from 'react';
+// import "./Navbar.css";
+import Home from "./components/Home";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
-import './App.css';
+
+// Components
 
 function App() {
   return (
     <div>
-      <h1 ClassName='Hello'>Hello World!</h1>
-  
+      <h1 ClassName='text text-red-700'>Hello World</h1>
+      {/* <Navbar/> */}
+      <Home/>
+      <Experience/>
+      <Education/>
+      <Skills/>
+      <Contact/>
     </div>
   );
-}1
+}
 
 export default App;
