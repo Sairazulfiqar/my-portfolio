@@ -11,9 +11,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      <header />
-      <h1>Hello World</h1>
+    <div className='App'>
       <Header />
       <Home/>
       <Experience/>
