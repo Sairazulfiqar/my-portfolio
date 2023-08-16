@@ -1,5 +1,7 @@
 import React from 'react';
+import "./App.css";
 import Header from "./components/Header";
+// import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
@@ -11,14 +13,16 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className='App'>
+    <div className='Container-main'>
+  
       <Header />
+      <Navbar />
       <Home/>
       <Experience/>
       <Education/>
       <Skills/>
       <Contact/>
-      <Navbar />
+
     </div>
   );
 };
