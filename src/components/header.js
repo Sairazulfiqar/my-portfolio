@@ -6,10 +6,8 @@ import {FaRegMoon} from 'react-icons/fa';
 export const Header = () => {
     return (
         <div className='Header-main'> 
-            <div> <BsSun /> </div>
-
-
-
+            <div> <BsSun /> <FaRegMoon/> </div>
+            
         </div>
     )
 }

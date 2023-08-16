@@ -12,10 +12,13 @@ import {Link} from 'react-scroll';
 export const Navbar = () => {
     return(
         <nav className="Nav-main">
-            <div className="Navbar"> <BiHome/> </div>
-            <div className='Navbar'> <IoPersonOutline/>  </div>
-            <div className='Navbar'> <LuGraduationCap/>  </div>
-            <div className='Navbar'> <BiMessageRounded/>  </div>
+            <div id='Nav-parts'>
+                <div className='Navbar'> <BiHome/> </div>
+                <div className='Navbar'> <IoPersonOutline/>  </div>
+                <div className='Navbar'> <LuGraduationCap/>  </div>
+                <div className='Navbar'> <BiMessageRounded/>  </div>
+            </div>
+
         </nav>
     )
 };
