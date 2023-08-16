@@ -1,11 +1,11 @@
 import React from 'react';
-// import "./Navbar.css"
+import "./Navbar.css";
 //Importar iconos//
 import {BiHome} from 'react-icons/bi';
 import {IoPersonOutline} from 'react-icons/io5';
 import {BiMessageRounded} from 'react-icons/bi';
 import {LuGraduationCap} from 'react-icons/lu'
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 
 // //link
 // import {Links} from 'react-scroll';

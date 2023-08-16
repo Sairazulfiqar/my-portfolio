@@ -20,7 +20,7 @@ function App() {
       <Skills/>
       <Contact/>
       <Navbar />
-    </div>
+      </div>
   );
 };
 

@@ -1,5 +1,21 @@
 .Header-main{
     background-color: rgb(119, 17, 119);
     width: 100%;
-    height: 50px;
+    height: 70px;
+    display:flex;
+    align-items: center;
+
+}
+
+#sunmoon{
+    display: flex;
+    justify-content: right;
+
+}
+
+#femdev{
+    display: flex;
+    justify-content: left;
+    height: 60px;
+    width: 60px;
 }

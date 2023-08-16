@@ -1,16 +1,10 @@
 import React from 'react'
-// import "./Home.css";
+import "../App.css";
 
 
 export const Home = () => {
   return (
-    <div className='section'>
-      <div className='Home-intro'>
-        Hi, I'm Saira
-
-      </div>
-      
-    </div>
+    <div className='section'> Hi, I'm Saira </div>
   )
 }
 
