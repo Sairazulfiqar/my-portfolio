@@ -15,12 +15,14 @@
 .Container-main{
     display:flex;
     align-items: center;
-}
+    border: 1px solid purple;
+};
 
-.Container-hijo{
+.section{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border: 1px solid purple;
+    text-align: center;
 
-}
-
-
-
-
+};

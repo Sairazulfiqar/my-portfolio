@@ -1,7 +1,6 @@
 import React from 'react';
 import "./App.css";
 import Header from "./components/Header";
-// import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
@@ -13,7 +12,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className='bg-site bg-no-repeat-bg-cover over-flow-hidden'>
+    <div className='App'>
       <Header />
       <Home/>
       <Experience/>
