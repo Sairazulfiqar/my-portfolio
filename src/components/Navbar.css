@@ -7,10 +7,10 @@
     border: none;
     border-radius: 40px;
     height: 40px;
-
     padding-inline: 80px;
     column-gap: 30px;
-    margin:auto
+    margin:auto;
+    position: absolute;
 }
 
 .Nav-parts{
