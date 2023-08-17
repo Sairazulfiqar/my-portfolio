@@ -3,11 +3,13 @@
     text-align: center;
     place-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.2);
+    background-color: #00000033;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: none;
     border-radius: 40px;
     height: 40px;
-    padding-inline: 80px;
+    padding-inline: 20px;
     column-gap: 30px;
     margin-bottom: 2%;
     position: fixed;
@@ -15,7 +17,17 @@
     bottom:0;
 }
 
-.Nav-parts{
+nav a {
     display: flex;
+    background: transparent;
+    border-radius: 50%;
+}
+
+nav a:hover {
+    background: rgba (0, 0, 0, 0.3);
+}
+
+nav a.active{
+    background-color: blueviolet;
 }
 

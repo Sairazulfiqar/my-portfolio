@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react';
+import React from 'react';
 import "./Header.css";
 import {BsSun} from 'react-icons/bs';
 import {FaRegMoon} from 'react-icons/fa';
@@ -12,6 +12,7 @@ export const Header = () => {
                 <img src={femdev} alt='' id='femdev'/>
             </div>
             <div id='sunmoon'> <BsSun /> <FaRegMoon/> </div>
+            
         </div>
     )
 }

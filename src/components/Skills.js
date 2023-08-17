@@ -5,7 +5,7 @@ import '../App.css';
 
 export const Skills = () =>{
   return (
-    <div className="flex-child5" id="Skills">
+    <div className="flex-child2" id="Skills">
       Skills
       {/* <div className='icons'>
                 <img src={hardskills} alt='' id='iconspic'/>
