@@ -3,7 +3,7 @@ import "../App.css";
 
 export const Education = () =>{
   return (
-    <div className='section'>
+    <div className="flex-child2" id="Education">
       Education
     </div>
   )

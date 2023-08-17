@@ -4,7 +4,7 @@ import "../App.css";
 
 export const Home = () => {
   return (
-    <div className='section'> Hi, I'm Saira </div>
+    <div className="flex-child1"> Hi, I'm Saira </div>
   )
 }
 

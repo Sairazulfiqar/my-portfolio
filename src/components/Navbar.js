@@ -1,24 +1,27 @@
 import React from 'react';
 import "./Navbar.css";
+
 //Importar iconos//
 import {HiOutlineHome} from 'react-icons/hi';
-import {IoPersonOutline} from 'react-icons/io5';
+import {HiOutlineChartBar} from 'react-icons/hi';
+import {LuGraduationCap} from 'react-icons/lu';
+import {PiSuitcaseSimple} from 'react-icons/pi';
 import {BiMessageRounded} from 'react-icons/bi';
-import {LuGraduationCap} from 'react-icons/lu'
-
-import {Link} from 'react-router-dom';
+// import {BrowserRouter, Link} from 'react-router-dom';
+import Home from './Home';
 
 // //link
-// import {Links} from 'react-scroll';
+// import {Link} from 'react-scroll';
 
 export const Navbar = () => {
     return(
         <nav className='Navbar'>
 
-            <div className='Nav-parts'> <a href='Home'> <HiOutlineHome/>  </a> </div>
-            <div className='Nav-parts'> <IoPersonOutline/>  </div>
-            <div className='Nav-parts'> <LuGraduationCap/>  </div>
-            <div className='Nav-parts'> <BiMessageRounded/>  </div>
+            {/* <Link onClick={this.handleScroll} to="Home"> <HiOutlineHome/> </Link> */}
+            <div className='Nav-parts'> <a href='Skills'><HiOutlineChartBar/> </a>  </div>
+            <div className='Nav-parts'> <a href='Education'><LuGraduationCap/> </a>  </div>
+            <div className='Nav-parts'> <a href='Work'><PiSuitcaseSimple/></a>  </div>
+            <div className='Nav-parts'> <a href='Contact'><BiMessageRounded/> </a> </div>
         </nav>
     )
 };

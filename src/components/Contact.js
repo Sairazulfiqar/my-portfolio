@@ -3,7 +3,7 @@ import "../App.css";
 
 export const Contact = () =>{
   return (
-    <div className="section">
+    <div className="flex-child4" id="Contact">
       Contact
     </div>
   )

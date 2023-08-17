@@ -3,14 +3,16 @@
     text-align: center;
     place-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
     border: none;
     border-radius: 40px;
     height: 40px;
     padding-inline: 80px;
     column-gap: 30px;
-    margin:auto;
-    position: absolute;
+    margin-bottom: 2%;
+    position: fixed;
+    overflow: hidden;
+    bottom:0;
 }
 
 .Nav-parts{

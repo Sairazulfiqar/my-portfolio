@@ -2,7 +2,7 @@ import React from 'react';
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Experience from "./components/Experience";
+import Work from "./components/Work";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
@@ -15,9 +15,9 @@ function App() {
     <div className='App'>
       <Header />
       <Home/>
-      <Experience/>
-      <Education/>
       <Skills/>
+      <Work/>
+      <Education/>
       <Contact/>
       <Navbar />
       </div>
