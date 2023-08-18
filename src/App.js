@@ -16,8 +16,8 @@ function App() {
       <Header />
       <Home/>
       <Skills/>
-      <Work/>
       <Education/>
+      <Work/>
       <Contact/>
       <Navbar />
       </div>
