@@ -15,7 +15,7 @@ function Contact() {
     hasError: false,
   });
 
-  function handleChange(evt) {}
+  function handleChange(handleChange) {}
   function handleBlur() {
     /*
       1. Evaluamos de manera síncrona
@@ -23,15 +23,19 @@ function Contact() {
     */
     const hasError = !nameRegexp.test(nameField.value) && !!emailRegexp.test(emailField.value);
     setNameField((prevState) => ({ ...prevState, hasError })) && setEmailField((prevState) => ({ ...prevState, hasError }));;
-  };
-  
-    return (
+    };
+
+    const hasError = !nameRegexp.test(nameField.value);
+    setNameField((prevState) => ({ ...prevState, hasError }));;
+
+  return (
     <div className='Contacts-main'>
+      <h1> <strong>Let's Connect</strong></h1> <br/>
       <div className="flex-child5" id="Contact">
         <form>
           <div className='row'>
             <label htmlFor="Name"></label>
-            <input id="name" type="text" name="Name" placeholder='Name' value={nameField.value} onChange={handleChange} onBlur={handleBlur} aria-errormessage="NameErrorID" aria-invalid={nameField.hasError}/>
+            <input type="text" id="name" name="Name" placeholder='Name' value={nameField.value} onChange={handleChange} onBlur={handleBlur} aria-errormessage="NameErrorID" aria-invalid={nameField.hasError}/>
             <p id="msgID" style={{ visibility: nameField.hasError ? "visible" : "hidden" }}> Please enter a valid Name</p>
           </div>
           <div className='row'>
@@ -42,15 +46,12 @@ function Contact() {
           <div className='row'>
           <input id="submit" type="submit" value="Let's Talk"/>
           </div>
-            
-
-
           </form>
       </div>
     </div>
   );
-};
 
+};
 
 // export const Contact = () => {
 
