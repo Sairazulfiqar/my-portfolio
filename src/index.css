@@ -23,6 +23,7 @@
     --container-color; */
     
     /*Container-sizing*/
+    --conteiner-width-xl: 100%;
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-ms:90%;

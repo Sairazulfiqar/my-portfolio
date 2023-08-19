@@ -12,7 +12,7 @@ export const Home = () => {
 
 return (
   <div className="flex-child1" id="Home"> 
-  {/* <img src={girl} alt='' id='girl'/> */} 
+  {/* <img src={girl} alt='' id='girl'/>  */}
     <h1 style={{ paddingTop: '70px', margin: '200px', fontSize:'50px', fontWeight: 'normal' }}>
       I am a{' '}
       <span style={{ color: 'purple', fontWeight: 'bold' }}>

@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Components
 
@@ -20,6 +21,7 @@ function App() {
       <Work/>
       <Contact/>
       <Navbar />
+      <Footer />
       </div>
   );
 };
