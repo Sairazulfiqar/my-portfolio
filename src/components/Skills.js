@@ -1,7 +1,7 @@
 import React from 'react'
 import hardskills from '../img/hardskills.png';
 import reacticon from '../img/reacticon.png';
-import python from '../img/python.png';
+// import python from '../img/python.png';
 import 'animate.css';
 import '../App.css';
 
@@ -9,7 +9,7 @@ export const Skills = () =>{
   return (
     <div className="flex-child2" id="Skills">
       <div className='icons' id='hardskills'>
-        <img src={python} alt='' id='phyton'/>  
+        {/* <img src={python} alt='' id='phyton'/>   */}
         <img src={reacticon} alt='' id='reactpic'/>
         <img src={hardskills} alt='' id='iconspic'/>
       </div>
