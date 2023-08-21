@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Header.css";
+import "../App.css";
 import {BsSun} from 'react-icons/bs';
 import {FaRegMoon} from 'react-icons/fa';
 import femdev from '../img/femdev.png';

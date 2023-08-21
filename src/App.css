@@ -27,7 +27,8 @@
 
 .flex-child1,.flex-child2, .flex-child3, .flex-child4{
     display: flex;
-    height: 550px;
+    height: 600px;
+    text-align: center;
 }
 
 .flex-child2{
@@ -36,9 +37,44 @@
     gap: 100px;
 }
 
-.static-text{
-    display: flex;
+
+/*==========HEADER CSS==========*/
+
+.Header-main{
+    background-color: rgb(119, 17, 119);
+    width: 100%;
+    height: 70px;
+    display:flex;
+    align-items: center;
+
 }
+
+#sunmoon{
+    display: flex;
+    justify-content: right;
+
+}
+
+#femdev{
+    display: flex;
+    justify-content: left;
+    height: 60px;
+    width: 60px;
+}
+
+/*==========HOME CSS==========*/
+
+.section {
+    height: 500px;
+}
+
+/* img #girl{
+    height: 30px;
+    width: 40px ;
+
+} */
+
+/*=========SKILLS CSS/=========*/
 
 .icons{
     display: flex;
@@ -62,27 +98,15 @@
 }
 
 .softskills{
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+
   }
   
   .softskills .animate__fadeIn {
-    animation-name: fadeIn;
-    --animate-duration: 3s;
+    animation-name: fadeInUp;
+    --animate-duration: 8s;
   }
 
-/* img #girl{
-    height: 30px;
-    width: 40px ;
-
-} */
-
-/*CONTACT CSS/*/
+/*==========CONTACT CSS==========/*/
 
 .flex-child5{
     display: flex;
@@ -136,17 +160,33 @@ form{
 }
 
 #submit{
-    border: 2px;
+    border: 1px white solid;
     width: 80px;
     border-radius: 40px;
-    background: (to right, #904e95, #e96443)
+    color: #0f0a0f;
+    background-color: transparent;
 }
+
+#submit:hover{
+    background: linear-gradient(to right, #904e95, #e96443);
+}
+
 .error{
     color:red;
     font-size: 75%;
 }
-/*SKILLS CSS/*/
 
+
+
+/*==========FOOTER CSS==========/*/
+
+.Footer-container{
+    background-color: rgb(119, 17, 119);
+    width: 100%;
+    height: 70px;
+    display:flex;
+    align-items: center;
+}
 
 
 

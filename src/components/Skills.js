@@ -14,11 +14,11 @@ export const Skills = () =>{
         <img src={hardskills} alt='' id='iconspic'/>
       </div>
       <div className='softskills'>
-        <h1 className='animate__animated animate__fadeIn'>Team work</h1>
-        <h1 className='animate__fadeIn'> Leadership </h1>
-        <h1 className='animate__fadeIn'> Comunication Skills</h1>
-        <h1 className='animate__fadeIn'> Flexible </h1>
-        <h1 className='animate__fadeIn'> Resolutive </h1>
+        <h1 className='animate__animated animate__fadeInUp'>Team work</h1>
+        <h1 className='animate__animated animate__fadeInUp'> Leadership </h1>
+        <h1 className='animate__animated animate__fadeInUp'> Comunication Skills</h1>
+        <h1 className='animate__animated animate__fadeInUp'> Flexible </h1>
+        <h1 className='animate__animated animate__fadeInUp'> Resolutive </h1>
       </div>
     </div>
   )
