@@ -29,14 +29,15 @@
     display: flex;
     height: 600px;
     text-align: center;
+    border: 1px solid black;
 }
 
 .flex-child2{
     display: flex;
     align-items:center;
-    gap: 100px;
+    text-align:justify;
+    border: black 1px solid;
 }
-
 
 /*==========HEADER CSS==========*/
 
@@ -78,17 +79,22 @@
 
 .icons{
     display: flex;
-}
-#iconspic{
-    width: 200px;
+    flex-direction: column;
     height: 200px;
+    border: black 1px solid;
+}
+
+#devlogs{
+    height: 100px;
+    width: 280px;
+
 }
 
 #python{
-    width: 80px;
-    height: 80px;
-    margin-top: 14px;
-    margin-right: 10px;;
+    width: 90px;
+    height: 90px;
+    margin-top: 2%;
+    margin-left: 7px;
 }
 
 #reactpic{
@@ -97,15 +103,19 @@
     height: 90px;
 }
 
+#mysql{
+    width: 95px;
+    height: 90px;
+}
+
 .softskills{
+    border: black 1px solid;
+}
 
-  }
-  
-  .softskills .animate__fadeIn {
-    animation-name: fadeInUp;
-    --animate-duration: 8s;
-  }
-
+.softskills .animate__fadeIn {
+  animation-name: fadeInUp;
+  --animate-duration: 8s;
+}
 /*==========CONTACT CSS==========/*/
 
 .flex-child5{
@@ -175,8 +185,6 @@ form{
     color:red;
     font-size: 75%;
 }
-
-
 
 /*==========FOOTER CSS==========/*/
 

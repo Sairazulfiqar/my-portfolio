@@ -1,5 +1,6 @@
 import React from 'react'
 import "../App.css";
+import cv from "./cv.json";
 
 export const Education = () =>{
   return (
