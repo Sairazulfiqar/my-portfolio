@@ -5,6 +5,14 @@ import {FaRegMoon} from 'react-icons/fa';
 import femdev from '../img/femdev.png';
 
 export const Header = () => {
+    // const DarkModeToggle = () => {
+    //     const { value, toggle } = useDarkMode(false)
+    //     return (
+    //         <button type='button' onClick={toggle}>
+    //             {value ? '☀' : '☾'}
+    //         </button>
+    //     )
+    // }
     return (
         <div className='Header-main'>
             <div className='femdevv'>

@@ -27,18 +27,52 @@
 
 .flex-child1,.flex-child2, .flex-child3, .flex-child4{
     display: flex;
-    height: 600px;
+    /* height: 600px; */
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
-.flex-child2{
+
+.flex-child1{
     display: flex;
-    align-items:center;
-    text-align:justify;
-    border: black 1px solid;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+    padding-bottom: 20%;
+}
+.stop .static{
+    display: flex;
+    justify-content: right;
 }
 
+#femdevv{
+    width:70%;
+    height:70%;
+}
+
+.CV a{
+    width: 120px;
+    height: 30px;
+    font-style: white;
+    border: white;
+    border-radius: 20px 20px 20px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.CV a{
+    color: white;
+
+}
+
+.CV:hover{
+    width: 120px;
+    height: 30px;
+    border: white;
+    border-radius: 10px 10px 10px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to right, #904e95, #e96443)
+}
 /*==========HEADER CSS==========*/
 
 .Header-main{
@@ -64,10 +98,10 @@
 }
 
 /*==========HOME CSS==========*/
-
+/* 
 .section {
     height: 500px;
-}
+} */
 
 /* img #girl{
     height: 30px;
@@ -75,12 +109,106 @@
 
 } */
 
+/*=========EDUCATION CSS/=========*/
+
+.flex-child4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: auto;
+    padding-bottom: 5rem;
+    margin-top: 10%;
+}
+
+.flex-child4 .education-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education-row .education-column{
+    flex: auto;
+}
+
+.education-column .title{
+    font-size: large;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.education-column .education-box{
+    border-left: .1rem solid;
+}
+
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.education-box .education-content::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: -.4rem;
+    width: .8rem;
+    height: .8rem;
+    background: purple;
+    border-radius: 50%;
+}
+
+.education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .1rem solid;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.education-content .content::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: orchid;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.education-content .content:hover::before{
+    width: 100%;
+
+}
+.education-content .content .year{
+    font-size: medium;
+    color: white;
+    padding-bottom: .5rem;
+
+}
+
+.education-content .content h3{
+    font-size: medium;
+
+}
+
+
 /*=========SKILLS CSS/=========*/
+.flex-child2{
+    display: flex;
+    align-items:center;
+    text-align:justify;
+    border: black 1px solid;
+    justify-content: space-around;
+    padding: 5%;
+    gap: 4%;
+}
 
 .icons{
     display: flex;
     flex-direction: column;
-    height: 200px;
+    width: 320px;
     border: black 1px solid;
 }
 
@@ -116,6 +244,11 @@
   animation-name: fadeInUp;
   --animate-duration: 8s;
 }
+
+/* .softskills .icons{
+    
+} */
+
 /*==========CONTACT CSS==========/*/
 
 .flex-child5{
@@ -166,7 +299,7 @@ form{
     width: 400px;
 }
 .row{
-    color: white;
+    border-color: white;
 }
 
 #submit{
@@ -185,6 +318,11 @@ form{
     color:red;
     font-size: 75%;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
 
 /*==========FOOTER CSS==========/*/
 

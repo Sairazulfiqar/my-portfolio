@@ -19,10 +19,10 @@ export const Skills = () =>{
           <img src={reacticon} alt='' id='reactpic'/>
           <img src={python} alt='' id='python'/>  
         </div>
-
-
       </div>
+      
       <div className='softskills'>
+        
         <h1 className='animate__animated animate__fadeInUp'>Team work</h1>
         <h1 className='animate__animated animate__fadeInUp'> Leadership </h1>
         <h1 className='animate__animated animate__fadeInUp'> Comunication Skills</h1>
