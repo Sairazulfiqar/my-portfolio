@@ -3,42 +3,36 @@
     "email": "sairazulfiqar@hotmail.com",
     "education":[
         {
-            "title1": "Web Development, Artificial Intelligence & Python",
-            "entity": "Fundació Esplai",
-            "f_start1":"2023-05-01",
-            "f_end1":"2023-09-28"
+            "title1": "Web Dev, Artificial Intelligence & Python",
+            "entity1": "Fundació Esplai",
+            "date1":"May 2023 - September 2023"
         },
         {
-            "title2": "Bachelor of Arts in Political & Administration Sciencies",
-            "entity": "University of Pompeu Fabra",
-            "f_start2":"2015-09-15",
-            "f_end2":"2019-06-24"
+            "title2": "BA in Political & Administration Sciencies",
+            "entity2": "University of Pompeu Fabra",
+            "date2":"September 2015 - June 2019"
         },
         {
-            "title3": "CFGS Comercial Managment and Marketing",
-            "entity": "Fundació Esplai",
-            "f_start3":"2023-05-01",
-            "f_end3":"2023-09-28"
+            "title3": "CFGS Comercial Managment & Marketing",
+            "entity3": "Centre Lopez Vicuña",
+            "date3":"September 2014 - July 2015"
         }
     ],
     "workexperience": [
         {
             "company1": "Warraich Traders",
             "location1": "Barcelona",
-            "f_start1": "2018-01-01",
-            "f_end1":"2018-08-30"
+            "date1": "January 2018 - August 2018"
         },
         {
             "company2": "Seprotec",
             "location2": "Barcelona",
-            "f_start2": "2015-01-01",
-            "f_end2":"2016-01-01"
+            "date2": "January 2015 - January 2016"
         },
         {
             "company3": "Fundación Icil",
             "location3": "Barcelona",
-            "f_start3": "2014-01-01",
-            "f_end3":"2014-07-01"
+            "date3": "January 2014 - July 2014"
         }
     ],
     "sofskills": [

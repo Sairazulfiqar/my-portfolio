@@ -12,15 +12,17 @@ export const Education = () => {
       <div className='education-row'>
         <div className='education-column'>
           <h3 className='title'> Education </h3>
-
           <div className='education-box'>
             <div className='education-content'>
               <div className='content'>
                 <div className='year'> {data.education.map((education) => {
-                  return <option> {education.f_start1}{education.f_end1}</option>
+                  return <p> {education.date1}</p>
                 })} </div>
                 <h3> {data.education.map((education) => {
-                  return <option>{education.title1}</option>
+                return <p>{education.entity1}</p>
+                })} </h3>
+                <h3> {data.education.map((education) => {
+                  return <p>{education.title1}</p>
                 })} </h3>
               </div>
             </div>
@@ -28,10 +30,13 @@ export const Education = () => {
             <div className='education-content'>
               <div className='content'>
                 <div className='year'> {data.education.map((education) => {
-                  return <option> {education.f_start2}{education.f_end2}</option>
+                  return <p>{education.date2} </p>
                 })} </div>
                 <h3> {data.education.map((education) => {
-                  return <option>{education.title2}</option>
+                return <p>{education.entity2}</p>
+                })} </h3>
+                <h3> {data.education.map((education) => {
+                  return <p>{education.title2}</p>
                 })}</h3>
               </div>
             </div>
@@ -39,10 +44,13 @@ export const Education = () => {
             <div className='education-content'>
               <div className='content'>
                 <div className='year'> {data.education.map((education) => {
-                  return <option> {education.f_start3}{education.f_end3}</option>
+                  return <p> {education.date3}</p>
                 })} </div>
                 <h3> {data.education.map((education) => {
-                  return <option>{education.title3}</option>
+                  return <p>{education.entity3}</p>
+                })} </h3>
+                <h3> {data.education.map((education) => {
+                  return <p>{education.title3}</p>
                 })}</h3>
               </div>
             </div>
@@ -56,42 +64,42 @@ export const Education = () => {
             <div className='education-content'>
               <div className='content'>
                 <div className='year'> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.f_start1}{workexperience.f_end1}</option>
+                  return <p> {workexperience.date1}</p>
                 })}   </div>
-                <h3 className='Location'> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.location1}</option>
-                })} </h3>
-                <h3> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.company1}</option>
-                })} </h3>
-              </div>
-            </div>
-
-            <div className='education-content'>
-              <div className='content'>
-                <div className='year'> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.f_start2}{workexperience.f_end2} </option>
-                })}</div>
-                <h3 className='Location'> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.location2}</option>
-                })} </h3>
-                <h3> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.company2}</option>
-                })}</h3>
-              </div>
-            </div>
-
-            <div className='education-content'>
-              <div className='content'>
-                <div className='year'> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.f_start3}{workexperience.f_end3} </option>
+                <div className='Location'> {data.workexperience.map((workexperience) => {
+                  return <p> {workexperience.location1}</p>
                 })} </div>
-                <h3 className='Location'> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.location3}</option>
-                })} </h3>
-                <h3> {data.workexperience.map((workexperience) => {
-                  return <option> {workexperience.company3}</option>
-                })}</h3>
+                <div> {data.workexperience.map((workexperience) => {
+                  return <h3> {workexperience.company1}</h3>
+                })} </div>
+              </div>
+            </div>
+
+            <div className='education-content'>
+              <div className='content'>
+                <div className='year'> {data.workexperience.map((workexperience) => {
+                  return <p> {workexperience.date2} </p>
+                })}</div>
+                <div className='Location'> {data.workexperience.map((workexperience) => {
+                  return <p> {workexperience.location2}</p>
+                })} </div>
+                <div> {data.workexperience.map((workexperience) => {
+                  return <h3> {workexperience.company2}</h3>
+                })}</div>
+              </div>
+            </div>
+
+            <div className='education-content'>
+              <div className='content'>
+                <div className='year'> {data.workexperience.map((workexperience) => {
+                  return <p> {workexperience.date3} </p>
+                })} </div>
+                <div className='Location'> {data.workexperience.map((workexperience) => {
+                  return <p> {workexperience.location3}</p>
+                })} </div>
+                <div> {data.workexperience.map((workexperience) => {
+                  return <h3> {workexperience.company3}</h3>
+                })}</div>
               </div>
             </div>
           </div>

@@ -41,6 +41,81 @@
     gap: 10%;
     padding-bottom: 20%;
 }
+
+
+/*Github & Linkedin icons*/
+
+.wrapped{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    padding:0;
+    background-size: cover;
+}
+
+.button{
+    display:flex;
+    gap:2%;
+    margin:0;
+    padding:0;
+    top:50%;
+    left:50%;
+    border-radius:50%;
+    background-color: transparent;
+}
+ 
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+
+/* .icon .button img{
+    position:relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #ebebeb;
+    transition: .5s;
+} */
+
+/* .icon .button a:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #2e1e1e;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.icon .button a:hover:before{
+
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #ef41ff;
+    filter: blur(30px);
+}  */
+
+#github{
+    width: 42px;
+    height: 42px;
+}
+
+#linkedin{
+    width: 42px;
+    height: 42px;
+}
+
+
 .stop .static{
     display: flex;
     justify-content: right;
@@ -103,11 +178,6 @@
     height: 500px;
 } */
 
-/* img #girl{
-    height: 30px;
-    width: 40px ;
-
-} */
 
 /*=========EDUCATION CSS/=========*/
 
@@ -123,10 +193,14 @@
 
 .flex-child4 .education-row{
     display: flex;
+    text-align: justify;
     flex-wrap: wrap;
     gap: 5rem;
 }
 
+.title{
+    color: white;
+}
 .education-row .education-column{
     flex: auto;
 }
@@ -138,6 +212,7 @@
 
 .education-column .education-box{
     border-left: .1rem solid;
+    border-left: 1px solid white;
 }
 
 .education-box .education-content{
@@ -159,7 +234,7 @@
 .education-content .content{
     position: relative;
     padding: 1.5rem;
-    border: .1rem solid;
+    border: .1rem solid white;
     border-radius: .6rem;
     margin-bottom: 2rem;
     overflow: hidden;
@@ -172,14 +247,15 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: orchid;
+    background-color: rgba(128, 0, 128, 0.596);
+    opacity: 0,5%;
     z-index: -1;
     transition: 0.5s;
+    border: white;
 }
 
 .education-content .content:hover::before{
     width: 100%;
-
 }
 .education-content .content .year{
     font-size: medium;

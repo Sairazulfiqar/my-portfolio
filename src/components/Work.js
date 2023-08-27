@@ -2,7 +2,6 @@ import React from 'react'
 import "../App.css";
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import girl from '../img/girl.png';
 
 
 export const Work = () =>{
