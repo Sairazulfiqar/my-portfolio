@@ -27,9 +27,7 @@
 
 .flex-child1,.flex-child2, .flex-child3, .flex-child4{
     display: flex;
-    /* height: 600px; */
     text-align: center;
-    /* border: 1px solid black; */
 }
 
 
@@ -71,7 +69,7 @@
 }
 
 
-/* .icon .button img{
+/* .icon .button a{
     position:relative;
     display: block;
     width: 80px;
@@ -121,7 +119,13 @@
     justify-content: right;
 }
 
-#femdevv{
+#femdevv {
+    width:70%;
+    height:70%;
+}
+
+#femdevv:before{
+    position:relative;
     width:70%;
     height:70%;
 }
@@ -148,6 +152,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(to right, #904e95, #e96443)
 }
+
 /*==========HEADER CSS==========*/
 
 .Header-main{
@@ -156,6 +161,8 @@
     height: 70px;
     display:flex;
     align-items: center;
+    margin:0;
+    padding:0;
 
 }
 
@@ -247,7 +254,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background-color: rgba(128, 0, 128, 0.596);
+    background: linear-gradient(to right, #904e95, #e96443);
     opacity: 0,5%;
     z-index: -1;
     transition: 0.5s;
@@ -408,6 +415,11 @@ form{
     height: 70px;
     display:flex;
     align-items: center;
+}
+
+.copyright{
+    font: white;
+    margin: 2%;
 }
 
 

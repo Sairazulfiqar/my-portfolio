@@ -15,7 +15,6 @@ export const Home = () => {
         <div className='femdev'> <img src={femdev} alt='' id='femdevv'/> </div>
         <div className='stop'> <h1>Hi! I'm SAIRA</h1> </div> <br/>
         <div className='static'>
-            {/* <h2> I'm a {""}</h2> */}
             <h2>
                  <span style={{color:'purple'}}>
                  <ReactTyped strings={["Web Developer","Political Scientist","Freelancer"]}

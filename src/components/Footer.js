@@ -3,7 +3,10 @@ import "../App.css";
 
 function Footer() {
   return (
-    <div className='Footer-container'> FOOTER
+    <div className='Footer-container'>
+      <div className='copyright'>
+        Copyright © 2023 FemDev. All rights reserved. 
+      </div>
 
       
     </div>
