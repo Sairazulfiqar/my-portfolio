@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {usestate} from 'react';
 import "./Navbar.css";
 
 //Importar iconos//
@@ -7,20 +7,18 @@ import {HiOutlineChartBar} from 'react-icons/hi';
 import {LuGraduationCap} from 'react-icons/lu';
 import {PiSuitcaseSimple} from 'react-icons/pi';
 import {BiMessageRounded} from 'react-icons/bi';
-// import {BrowserRouter, Link} from 'react-router-dom';
-// import Home from './Home';
-
-// //link
-// import {Link} from 'react-scroll';
+// //Import link from react library to have a smoth scroll through the page
+import {Link} from 'react-scroll';
 
 export const Navbar = () => {
+
     return(
         <nav className='Navbar'>
-            <a href="#Home" className='Active'> <HiOutlineHome/> </a>
-            <a href='#Skills'><HiOutlineChartBar/> </a>  
-            <a href='#Education'><LuGraduationCap/> </a> 
-            <a href='#Work'><PiSuitcaseSimple/></a>
-            <a href='#Contact'><BiMessageRounded/> </a>
+            <Link to='Home'> <HiOutlineHome/> </Link>
+            <Link to='Skills'><HiOutlineChartBar/> </Link>  
+            <Link to='Education'><LuGraduationCap/> </Link> 
+            <Link to='Work'><PiSuitcaseSimple/></Link>
+            <Link to='Contact'><BiMessageRounded/> </Link>
         </nav>
     )
 };

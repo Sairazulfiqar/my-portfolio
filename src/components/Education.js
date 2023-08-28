@@ -7,11 +7,12 @@ export const Education = () => {
 
   return (
 
-    <div className="flex-child4" id="Education">
+    <div className="flex-child3" id="Education">
 
       <div className='education-row'>
         <div className='education-column'>
           <h3 className='title'> Education </h3>
+
           <div className='education-box'>
             <div className='education-content'>
               <div className='content'>

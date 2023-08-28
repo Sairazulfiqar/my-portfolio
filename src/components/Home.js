@@ -5,7 +5,6 @@ import femdev from "../img/femdev.png";
 import pngegg from "../img/pngegg.png";
 import linkedin from "../img/linkedin.png";
 import ReactTyped from "react-typed";
-import { HiColorSwatch } from 'react-icons/hi';
 
 
 export const Home = () => {

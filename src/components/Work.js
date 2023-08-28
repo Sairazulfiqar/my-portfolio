@@ -1,43 +1,51 @@
 import React from 'react'
 import "../App.css";
-import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+// import img1 from '../img/img1.jpg';
+// import img2 from '../img/img2.jpg';
+// import img3 from '../img/img3.jpg';
+
 
 
 export const Work = () =>{
-  const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+  return(
+    <div className='flex-child4' id='Work'>
 
-  return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel>
       <Carousel.Item>
-        <girl text="First slide" />
+      <img
+          className="d-block w-100 h-100"
+          src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="First slide"
+        />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3> Example 1 </h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <girl text="Second slide" />
+      <img
+          className="d-block w-100 h-100"
+          src="https://images.pexels.com/photos/196659/pexels-photo-196659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Second slide"
+        />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Example 2</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <girl text="Third slide" />
+      <img
+          className="d-block w-100 h-100"
+          src="https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Third slide"
+        />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3> Example 3</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-  );
+    </div>
+  )
 }
 
 export default Work;

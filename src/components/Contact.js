@@ -34,7 +34,7 @@ const Contact = () => {
               <div className='row'>
                   <textarea id="msg" className="message" name="message" type="text" placeholder='Enter your message' {...register('message')}/>
               </div>
-              <div>
+              <div className='submit'>
                 <input type="submit" id="submit" value="Let's talk" />
               </div>
           </form>
