@@ -218,6 +218,7 @@
     z-index: -1;
     transition: 0.5s;
     border: white;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 
 .education-content .content:hover::before{
@@ -238,7 +239,7 @@
 .flex-child2 {
     display: flex;
     align-items:center;
-    justify-content:space-evenly;
+    justify-content:center;
     padding: 5%;
     gap: 5%;
     text-decoration: #ffffff;
@@ -355,12 +356,15 @@ h1, strong{
 
 .name:hover{
     background: linear-gradient(to right, #904e95, #e96443);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 .email:hover{
     background: linear-gradient(to right, #904e95, #e96443);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 .message:hover{
     background: linear-gradient(to right, #904e95, #e96443);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 #msg{
     border-radius: 20px 20px 20px 20px;
@@ -395,7 +399,8 @@ form{
     width: 80px;
     border-radius: 40px;
     color: #ffffff;
-    background-color: transparent;
+    background-color: purple;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 
 #submit:hover{
@@ -417,24 +422,23 @@ form{
 .Footer-container{
     background-color: rgb(119, 17, 119);
     width: 100%;
-    height: 70px;
     display:flex;
+    text-align: left;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-
-#copyright{
+    font-size: small;
     color: white;
-    margin: 2%;
 }
 
-#types{
-    color: #ffffff;
+#content, #content1{
     display: flex;
-    text-align: right;
-    margin-right:2%;
+    text-align: left;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    margin:0;
+    float: left;
 }
-
 
 
 
