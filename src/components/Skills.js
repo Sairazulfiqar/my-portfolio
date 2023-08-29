@@ -11,24 +11,24 @@ import '../App.css';
 export const Skills = () =>{
   return (
     <div className="flex-child2" id="Skills">
-      <div className='icons' id='hardskills'>
-        <div className='up'>
-            <img src={html100} alt='' id='html100'  className='animate__animated animate__fadeInUp'/>
-            <img src={java} alt='' id='java' className='animate__animated animate__fadeInUp'/>
-            <img src={css} alt='' id='css' className='animate__animated animate__fadeInUp'/>
+      <div className='hardskills'>
+        <div id='up'>
+          <img src={html100} alt='' id='html100'  className='animate__animated animate__fadeInUp'/>
+          <img src={java} alt='' id='java' className='animate__animated animate__fadeInUp'/>
+          <img src={css} alt='' id='css' className='animate__animated animate__fadeInUp'/>
         </div>
-        <div className='down'>
-          <img src={mysql} alt='' id='mysql' className='animate__animated animate__fadeInUp'/>
+        <div id='down'>
           <img src={reacticon} alt='' id='reactpic' className='animate__animated animate__fadeInUp'/>
-          <img src={python} alt='' id='python' className='animate__animated animate__fadeInUp'/>  
+          <img src={mysql} alt='' id='mysql' className='animate__animated animate__fadeInUp'/>
+          <img src={python} alt='' id='python' className='animate__animated animate__fadeInUp'/> 
         </div>
+ 
       </div>
       
       <div className='softskills'>
-        
         <h1 className='animate__animated animate__fadeInUp'>Team work</h1>
         <h1 className='animate__animated animate__fadeInUp'> Leadership </h1>
-        <h1 className='animate__animated animate__fadeInUp'> Comunication Skills</h1>
+        <h1 className='animate__animated animate__fadeInUp'> Comunication</h1>
         <h1 className='animate__animated animate__fadeInUp'> Flexibility </h1>
         <h1 className='animate__animated animate__fadeInUp'> Problem Solving </h1>
       </div>

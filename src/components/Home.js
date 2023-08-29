@@ -31,7 +31,7 @@ export const Home = () => {
         </div>
 
         <div className='CV'> 
-            <a className='CV' href={CV} target="_blank" rel="noopener noreferrer" download={"CV.pdf"}> Download my cv</a>
+            <a className='CV' href={CV} target="_blank" rel="noopener noreferrer" download={"CV.pdf"} > Download my cv</a>
             
         </div>
         <br></br>

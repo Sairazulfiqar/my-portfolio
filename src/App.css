@@ -18,7 +18,7 @@
     align-items:center;
     text-align: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 2.7rem;
 };
 
 .flex-child{
@@ -69,8 +69,8 @@
 }
 
 #github, #linkedin{
-    width: 35px;
-    height: 35px;
+    width: 2.2rem;
+    height: 2.2rem;
 }
 
 .stop{
@@ -94,24 +94,19 @@
 }
 
 .CV a{
-    width: 120px;
-    height: 30px;
-    font-style: white;
+    width: 7.5rem;
+    height: 1.8rem;
     border: white;
-    border-radius: 20px 20px 20px 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.CV a{
     color: white;
-
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .CV:hover{
     width: 120px;
     height: 30px;
     border: white;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: .6rem .6rem .6rem .6rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: linear-gradient(to right, #904e95, #e96443)
 }
@@ -121,12 +116,11 @@
 .Header-main{
     background-color: rgb(119, 17, 119);
     width: 100%;
-    height: 70px;
+    height: 4.3rem;
     display:flex;
     align-items: center;
     margin:0;
     padding:0;
-
 }
 
 #sunmoon{
@@ -138,8 +132,8 @@
 #femdev{
     display: flex;
     justify-content: left;
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width:  3.75rem;
 }
 
 /*==========HOME CSS==========*/
@@ -185,7 +179,6 @@
 .education-box .education-content{
     position: relative;
     padding-left: 2rem;
-
 }
 
 
@@ -234,7 +227,6 @@
     font-size: medium;
     color: white;
     padding-bottom: .5rem;
-
 }
 
 .education-content .content h3{
@@ -246,49 +238,28 @@
 .flex-child2 {
     display: flex;
     align-items:center;
-    text-align:justify;
-    border: black 1px solid;
-    justify-content: space-around;
+    justify-content:space-evenly;
     padding: 5%;
-    gap: 4%;
+    gap: 5%;
     text-decoration: #ffffff;
 }
 
-.icons{
+.hardskills{
     display: flex;
     flex-direction: column;
-    width: 320px;
-    border: black 1px solid;
+    gap: 10%;
+    gap: 3rem;
 }
 
-#devlogs{
-    height: 100px;
-    width: 280px;
-
-}
-
-#python{
-    width: 90px;
-    height: 90px;
-    margin-top: 2%;
-    margin-left: 7px;
-}
-
-#reactpic{
-    margin-top: 12px;
-    width: 95px;
-    height: 90px;
-}
-
-#mysql{
-    width: 95px;
-    height: 90px;
+#up{
+    display: flex;
+    margin: 3%;
 }
 
 .softskills{
-    border: black 1px solid;
     font: white;
-
+    display: flex;
+    flex-direction: column;
 }
 
 h1.animate__animated.animate__fadeInUp {
@@ -299,6 +270,30 @@ h1.animate__animated.animate__fadeInUp {
   --animate-duration: 8s;
 }
 
+#python{
+    width: 5.6rem;
+    height: 5.6rem;
+    margin-top: 2%;
+    margin-left: 0.4rem;
+}
+
+#reactpic{
+    margin-top: 0.75rem;
+    width: 5.9rem;
+    height: 5.6rem;
+}
+
+#mysql{
+    width: 5.9rem;
+    height: 5.6rem;
+}
+
+#html100,
+#java,
+#css{
+    width: 5.6rem;
+    height: 5.6rem;
+}
 /*==========WORK=========*/
 
 /* Medium devices (landscape tablets, 768px and up)
@@ -330,7 +325,7 @@ h1.animate__animated.animate__fadeInUp {
 
 .flex-child5{
     display: flex;
-    height: 520px;
+    /* height: 32.5rem; */
 }
 .contacts-main{
     display: flex;
@@ -425,11 +420,19 @@ form{
     height: 70px;
     display:flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.copyright{
-    font: white;
+#copyright{
+    color: white;
     margin: 2%;
+}
+
+#types{
+    color: #ffffff;
+    display: flex;
+    text-align: right;
+    margin-right:2%;
 }
 
 
