@@ -7,9 +7,7 @@ function Footer() {
   return (
     <div className='Footer-container'>
       <div id='content'>
-        <p>Copyright © 2023 FemDev. All rights reserved. </p>
-      </div>
-      <div id='content1'>        
+        <p>Copyright © 2023 FemDev. All rights reserved. </p>      
         <p>Press author's name words on the keyboard for a little something</p>
       </div>
     </div>

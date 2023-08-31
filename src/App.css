@@ -1,18 +1,16 @@
 /* CSS VARIABLES */
 
-/* Color mode used rgb */
-    /* --main-color: rgb(128, 128, 128); 
-    --second-color: rgb(66, 66, 66);
-    --title-color;
-    --text-color;
-    --body-color;
-    --container-color;
+/* Color mode used rgb
+--main-color:  
+--second-color: rgb(66, 66, 66);
+--title-color;
+--text-color;
+--body-color;
+--container-color; */
 
 /* FONTS ANS TIPHOGRAPHY*/
 
-/* } */ 
-
-
+/*Main container*/
 .App{
     display:flex;
     align-items:center;
@@ -25,11 +23,12 @@
     display: flex;
 }
 
-.flex-child1,.flex-child2, .flex-child3, .flex-child4{
+.flex-child1,.flex-child2, .flex-child3, .flex-child4, .flex-child5{
     display: flex;
-    text-align: center;
 }
 
+
+/*==========HOME CSS==========*/ 
 
 .flex-child1{
     display: flex;
@@ -119,26 +118,129 @@
     height: 4.3rem;
     display:flex;
     align-items: center;
+    justify-content: space-around;
     margin:0;
     padding:0;
 }
 
-#sunmoon{
+#sunmoon {
     display: flex;
-    justify-content: right;
-
+    align-items: flex-end;
 }
 
 #femdev{
     display: flex;
-    justify-content: left;
     height: 3.75rem;
     width:  3.75rem;
 }
 
-/*==========HOME CSS==========*/
+/* BUTTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON*/
 
+CSS
 
+/* ------------ VARIABLES ------------ */
+:root{
+  /* COLORS */
+  --color: #9176FF;
+  --dark-color: #2b2b2b;
+  --dark-icon-color: #fff;
+  --light-color: #f7f7f7;
+  --light-icon-color: #FFDE59;
+}
+
+/* ------------ BASE ------------ */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--light-color);
+} */
+
+/* -------------- BUTTON -------------- */
+.button1{
+  background-color: #751b75;
+  width: 4rem;
+  height: 1.9rem;
+  padding: 0 0.5em;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 8px 60px rgba(0,0,0, .1),
+              inset 0 8px 8px rgba(0,0,0, .1),
+              inset 0 -4px 4px rgba(0,0,0, .1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn__indicator{
+  background-color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50px;
+  position: absolute;
+  box-shadow: 0 8px 40px rgba(0,0,0, .2);
+  transition: transform .3s ease;
+}
+
+.btn__icon-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__icon{
+  color: var(--light-icon-color);
+  font-size: 1rem;
+}
+
+.btn__icon::before{
+    color: var(--light-icon-color);
+    font-size: 1rem;
+  }
+
+/* -------------- ANIMATION ------------ */
+.btn__icon.animated{
+  animation: spin 0.5s;
+}
+
+@keyframes spin{
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------- DARKMODE -------------- */
+.body .darkmode{
+  background-color: var(--dark-color);
+}
+
+.darkmode .btn{
+  box-shadow: inset 0 8px 60px rgba(0,0,0, .3),
+              inset 8px 0 8px rgba(0,0,0, .3),
+              inset 0 -4px 4px rgba(0,0,0, .3);
+}
+
+.darkmode .btn__indicator{
+  transform: translateX(1.5em);
+  background-color: var(--dark-color);
+  box-shadow: 0 8px 40px rgba(0,0,0, .3);
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50px;
+}
+
+.darkmode .btn__icon{
+  color: var(--dark-icon-color);
+}
 
 /*=========EDUCATION CSS/=========*/
 
@@ -173,7 +275,7 @@
 
 .education-column .education-box{
     border-left: .1rem solid;
-    border-left: 1px solid white;
+    border-left: .1rem solid white;
 }
 
 .education-box .education-content{
@@ -261,6 +363,7 @@
     font: white;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
 }
 
 h1.animate__animated.animate__fadeInUp {
@@ -297,6 +400,7 @@ h1.animate__animated.animate__fadeInUp {
 }
 /*==========WORK=========*/
 
+
 /* Medium devices (landscape tablets, 768px and up)
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .carousel-inner {
@@ -326,8 +430,9 @@ h1.animate__animated.animate__fadeInUp {
 
 .flex-child5{
     display: flex;
-    /* height: 32.5rem; */
+
 }
+
 .contacts-main{
     display: flex;
     align-items: center;
@@ -341,6 +446,9 @@ h1, strong{
     color: purple;
 }
 
+input, textarea{
+    color: white;
+}
 #name, #email, #msg{
     background-color: transparent;
     border: 1px purple solid;
@@ -348,9 +456,9 @@ h1, strong{
 }
 
 #name, #submit, #email{
-    border-radius: 50px;
-    height: 25px;
-    width: 200px;
+    border-radius: 3.1rem;
+    height: 1.5rem;
+    width: 12.5rem;
     text-decoration: white;
 }
 
@@ -367,28 +475,28 @@ h1, strong{
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 #msg{
-    border-radius: 20px 20px 20px 20px;
-    width: 200px;
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+    width: 12.5rem
 }
 
 form{
     display: flex;
     flex-direction: column;
     align-items:center;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     justify-content:center;
-    gap: 15px;
+    gap: 1rem;
     border: 2px rgb(124, 13, 100) solid;
-    margin-top: 3px;
-    height: 300px;
-    width: 400px;
+    margin-top: .2rem;
+    height: 18.75rem;
+    width: 25rem;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 .row{
     border-color: white;
     align-items: center;
-    width: 200px;
-    height: 40px;
+    width: 12.5rem;
+    height: 2.5rem;
 }
 
 .submit{
@@ -396,8 +504,8 @@ form{
 }
 #submit{
     border: 1px purple solid;
-    width: 80px;
-    border-radius: 40px;
+    width: 5rem;
+    border-radius: 2.5rem;
     color: #ffffff;
     background-color: purple;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
@@ -407,11 +515,6 @@ form{
     background: linear-gradient(to right, #904e95, #e96443);
 }
 
-.error{
-    color:red;
-    font-size: 75%;
-}
-
 ::placeholder { 
     color: white;
     opacity: 1; 
@@ -419,26 +522,24 @@ form{
 
 /*==========FOOTER CSS==========/*/
 
-.Footer-container{
+.Footer-container {
+    display: flex;
     background-color: rgb(119, 17, 119);
     width: 100%;
     display:flex;
-    text-align: left;
     flex-direction: column;
-    align-items: center;
+    justify-content:start;
+    align-items: start;
     font-size: small;
+    gap:0;
+    bottom:0px;
     color: white;
 }
 
-#content, #content1{
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    align-items: left;
-    color: white;
-    margin:0;
-    float: left;
+#content p{
+    
+    text-align: start;
+    align-content: center;
+    padding:0;
+
 }
-
-
-

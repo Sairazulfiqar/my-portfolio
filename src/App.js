@@ -1,5 +1,6 @@
 import React from 'react';
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Work from "./components/Work";
@@ -8,7 +9,8 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+//import useKeys to use rooks library for surprise thing
 import {useKeys} from 'rooks';
 
 // Components
@@ -29,7 +31,7 @@ function App() {
       <Contact/>
       <Navbar />
       <Footer />
-      </div>
+    </div>
   );
 };
 
