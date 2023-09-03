@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 
 //import useKeys to use rooks library for surprise thing
 import {useKeys} from 'rooks';
+import { ScrollToTop } from './components/Scrolltotop';
 
 // Components
 
@@ -30,6 +31,7 @@ function App() {
       <Work/>
       <Contact/>
       <Navbar />
+      <ScrollToTop/>
       <Footer />
     </div>
   );

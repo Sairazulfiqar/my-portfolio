@@ -4,17 +4,16 @@ import {BsSun} from 'react-icons/bs';
 import {FaRegMoon} from 'react-icons/fa';
 import femdev from '../img/femdev.png';
 
-export const Header = () => {
 
+const Header = () => {
     const [darkMode, setDarkMode] = useState(false);
+    const [iconClass, setIconClass] = useState('btn__icon'); // Initial class for the icon
+    // const [isAnimated, setIsAnimated] = useState(false); //Animation for the icon
 
     useEffect(() => {
-        const darkmode = localStorage.getItem('darkmode');
-        if (!darkmode) {
-            localStorage.setItem('darkmode', false);
-            setDarkMode(false);
-        } else {
-            setDarkMode(darkmode === 'true');
+        const storedDarkMode = localStorage.getItem('darkmode');
+        if (storedDarkMode !== null) {
+            setDarkMode(storedDarkMode === 'true');
         }
     }, []);
 
@@ -23,44 +22,46 @@ export const Header = () => {
         setDarkMode(newDarkMode);
         localStorage.setItem('darkmode', newDarkMode);
 
-        const icon = document.querySelector('.btn__icon');
-        icon.classList.add('animated');
+        // // Set the appropriate class for the icon
+        setIconClass(newDarkMode ? 'btn__icon FaRegMoon' : 'btn__icon BsSun');
+        
+        // // Trigger animation by setting isAnimated to true
+        // setIsAnimated(true);
 
-        setTimeout(() => {
-            icon.classList.remove('animated');
-        }, 500);
+        // // Remove the animation class after a delay
+        // setTimeout(() => {
+        //     setIsAnimated(false);
+        // }, 500);
+
+        // Optionally, you can add a class for animation here as well.
     };
 
     useEffect(() => {
-        const icon = document.querySelector('.btn__icon');
         if (darkMode) {
             document.body.classList.add('darkmode');
-            icon.classList.remove('BsSun');
-            icon.classList.add('FaRegMoon');
         } else {
             document.body.classList.remove('darkmode');
-            icon.classList.remove('FaRegMoon');
-            icon.classList.add('BsSun');
         }
     }, [darkMode]);
 
     return (
         <div className='Header-main'>
             <div className='femdevv'>
-                <img src={femdev} alt='' id='femdev'/>
+                <img src={femdev} id='femdev' alt='femdev'/>
+
             </div>
-            {/* <div id='sunmoon'>  <FaRegMoon/> </div> */}
-            <div className="button1"onClick={handleDarkModeToggle}>
+            <div className="button1" onClick={handleDarkModeToggle}>
                 <span className="btn__indicator">
                     <div className="btn__icon-container">
-                        <i className="btn__icon"> <BsSun/> </i>
+                        {/* Use the iconClass state to set the icon's class */}
+                        <i className="btn__icon animated">
+                            {darkMode ? <FaRegMoon /> : <BsSun />}
+                        </i>
                     </div>
                 </span>
             </div>
-
         </div>
-    )
-}
+    );
+};
 
 export default Header;
-
