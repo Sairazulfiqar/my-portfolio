@@ -1,6 +1,5 @@
-import React, {usestate} from 'react';
-import "./Navbar.css";
-
+import React from 'react';
+import "../App.css";
 //Importar iconos//
 import {HiOutlineHome} from 'react-icons/hi';
 import {HiOutlineChartBar} from 'react-icons/hi';

@@ -2,7 +2,7 @@ import React from 'react'
 import reacticon from '../img/reacticon.png';
 import java from '../img/java.png';
 import html100 from '../img/html100.png';
-import css from '../img/css.png';
+import css3 from '../img/css3.png';
 import python from '../img/python.png';
 import mysql from '../img/mysql.png';
 import 'animate.css';
@@ -15,7 +15,7 @@ export const Skills = () =>{
         <div id='up'>
           <img src={html100} alt='' id='html100'  className='animate__animated animate__fadeInUp'/>
           <img src={java} alt='' id='java' className='animate__animated animate__fadeInUp'/>
-          <img src={css} alt='' id='css' className='animate__animated animate__fadeInUp'/>
+          <img src={css3} alt='' id='css3' className='animate__animated animate__fadeInUp'/>
         </div>
         <div id='down'>
           <img src={reacticon} alt='' id='reactpic' className='animate__animated animate__fadeInUp'/>

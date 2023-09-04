@@ -52,13 +52,19 @@
 
 .button{
     display:flex;
-    gap:2%;
+    gap:5%;
     margin:0;
     padding:0;
     top:50%;
     left:50%;
     border-radius:50%;
     background-color: transparent;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.button:hover{
+    filter: drop-shadow(0 0 1em #904e95)
 }
  
 .icon{
@@ -110,6 +116,51 @@
     background: linear-gradient(to right, #904e95, #e96443)
 }
 
+
+/*==========NAVBAR ===========*/
+
+.Navbar{
+    display: flex;
+    text-align: center;
+    place-items: center;
+    justify-content: center;
+    background-color: #13131344;
+    backdrop-filter: blur(8px);
+    border: none;
+    border-radius: 40px;
+    height: 40px;
+    padding-inline: 15px;
+    column-gap: 20px;
+    margin-bottom: 2%;
+    position: fixed;
+    overflow: hidden;
+    bottom:0;
+    color: pink;
+}
+
+nav Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 50%;
+    margin: 0,8px;
+}
+
+nav a:hover {
+    background: linear-gradient(to right, #904e95, #e96443);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+}
+
+nav a.active{
+    background-color: purple;
+}
+
+
+
 /*==========HEADER CSS==========*/
 
 .Header-main{
@@ -121,10 +172,7 @@
     justify-content: space-around;
     margin:0;
     padding:0;
-}
-
-#sunmoon {
-    display: flex;
+    gap: 50%;
 }
 
 #femdev{
@@ -133,8 +181,8 @@
     width:  3.75rem;
 }
 
-/* BUTTOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOON*/
 
+/* -------------- BUTTON -------------- */
 /* ------------ BASE ------------ */
 *{
   margin: 0;
@@ -150,7 +198,6 @@
   background-color: var(--light-color);
 } */
 
-/* -------------- BUTTON -------------- */
 .button1{
   background-color: #751b75;
   width: 4rem;
@@ -245,9 +292,19 @@
 .flex-child3 .education-row{
     display: flex;
     text-align: justify;
+    flex-wrap: nowrap;
+    gap: 5rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 754px) {
+.flex-child3 .education-row{
+    display: flex;
+    text-align: justify;
     flex-wrap: wrap;
     gap: 5rem;
 }
+}
+
 
 .title{
     color: white;
@@ -287,6 +344,11 @@
     background: purple;
     border-radius: 50%;
 }
+
+/* @media only screen (min-width:300px) and (max-width:754px){
+   
+} */
+
 
 .content{
     border: .2rem solid purple;
@@ -354,13 +416,14 @@
 }
 
 .softskills{
+    margin-top: 15%;
     font: white;
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 2150px) {
     .hardskills, .softskills {
       flex: 100%;
     }
@@ -394,15 +457,19 @@ h1.animate__animated.animate__fadeInUp {
 }
 
 #html100,
-#java,
-#css{
+#java {
     width: 5.6rem;
     height: 5.6rem;
+}
+
+#css3{
+    width: 5.1rem;
+    height: 6rem;
 }
 /*==========WORK=========*/
 
 
-Medium devices (landscape tablets, 768px and up)
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .carousel-inner {
       height: 400px;
@@ -415,8 +482,8 @@ Medium devices (landscape tablets, 768px and up)
   
   } 
   
-  Extra small devices (phones, 600px and down) */
-   @media only screen and (max-width: 767px) {
+  /* Extra small devices (phones, 600px and down)  */
+   @media only screen and (min-width:380) and (max-width: 767px) {
       .carousel-inner {
       height: 160px;
   }
@@ -494,6 +561,25 @@ form{
     width: 25rem;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
+
+@media only screen and (min-width: 374px) and (max-width: 600px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        border-radius: 2.5rem;
+        justify-content:center;
+        gap: 1rem;
+        border: 2px rgb(124, 13, 100) solid;
+        margin-top: .2rem;
+        height: 18.75rem;
+        width: 20rem;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+
+  }
+  
+  
 .row{
     border-color: white;
     align-items: center;

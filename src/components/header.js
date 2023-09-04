@@ -22,7 +22,7 @@ const Header = () => {
         setDarkMode(newDarkMode);
         localStorage.setItem('darkmode', newDarkMode);
 
-        // // Set the appropriate class for the icon
+        // // Set the class for the icon
         setIconClass(newDarkMode ? 'btn__icon FaRegMoon' : 'btn__icon BsSun');
         
         // // Trigger animation by setting isAnimated to true
