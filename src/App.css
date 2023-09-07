@@ -407,29 +407,50 @@ nav a.active{
     align-items:center;
     justify-content:center;
     padding: 5%;
-    gap: 5%;
     text-decoration: var(--text-color);
     flex-wrap: wrap;
 }
 
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+    .flex-child2 .hardskills{
+        display: flex;
+        text-align: justify;
+        flex-wrap: wrap;
+        gap: 
+    }
+    }
+
 .hardskills{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 10%;
     gap: 3rem;
 }
 
-#up #down{
+.hs{
     display: flex;
-    gap:2%;
+    background-color: var(--container-color);
+    border: purple 1px solid;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    height: 120px;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
 
 .softskills{
     margin-top: 15%;
     font: var(--text-color);
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
+    font-size: small;
+    color: var(--second-color);
 }
 
 @media (max-width: 2150px) {
@@ -442,10 +463,11 @@ h1.animate__animated.animate__fadeInUp {
 
 }
 
-.softskills .animate__fadeIn {
+/* .softskills .animate__animated.animate__fadeInUp {
   animation-name: fadeInUp;
   --animate-duration: 8s;
-}
+  color: var(--second-color);
+} */
 
 #python{
     width: 5.6rem;

@@ -1,4 +1,5 @@
 import React from 'react'
+import ScrollAnimation from 'react';
 import reacticon from '../img/reacticon.png';
 import java from '../img/java.png';
 import html100 from '../img/html100.png';
@@ -10,27 +11,45 @@ import '../App.css';
 
 export const Skills = () =>{
   return (
-    <div className="flex-child2" id="Skills">
-      <div className='hardskills'>
-        <div id='up'>
-          <img src={html100} alt='' id='html100'  className='animate__animated animate__fadeInUp'/>
-          <img src={java} alt='' id='java' className='animate__animated animate__fadeInUp'/>
-          <img src={css3} alt='' id='css3' className='animate__animated animate__fadeInUp'/>
-        </div>
-        <div id='down'>
-          <img src={reacticon} alt='' id='reactpic' className='animate__animated animate__fadeInUp'/>
-          <img src={mysql} alt='' id='mysql' className='animate__animated animate__fadeInUp'/>
-          <img src={python} alt='' id='python' className='animate__animated animate__fadeInUp'/> 
-        </div>
  
+    <div className="flex-child2" id="Skills">   
+      <div className='hardskills'>
+        <div className='hs animate__animated animate__fadeInUp'>
+          <img src={html100} alt='' id='html100' />
+        </div>
+        <div className='hs animate__animated animate__fadeInUp'>
+          <img src={java} alt='' id='java'/>
+        </div>
+        <div className='hs animate__animated animate__fadeInUp'>
+          <img src={css3} alt='' id='css3'/>
+        </div>
+        <div className='hs animate__animated animate__fadeInUp'>
+          <img src={reacticon} alt='' id='reactpic'/> 
+        </div>
+        <div className='hs animate__animated animate__fadeInUp'>
+        <img src={python} alt='' id='python'/>
+        </div>
+        <div className='hs animate__animated animate__fadeInUp'>
+          <img src={mysql} alt='' id='mysql'/>
+        </div>
       </div>
-      
+
       <div className='softskills'>
-        <h1 className='animate__animated animate__fadeInUp'>Team work</h1>
-        <h1 className='animate__animated animate__fadeInUp'> Leadership </h1>
-        <h1 className='animate__animated animate__fadeInUp'> Comunication</h1>
-        <h1 className='animate__animated animate__fadeInUp'> Flexibility </h1>
-        <h1 className='animate__animated animate__fadeInUp'> Problem Solving </h1>
+        <div className=' ss animate__animated animate__fadeInUp'>
+          <h1>Teamwork</h1>
+        </div>
+        <div className='ss animate__animated animate__fadeInUp'>
+          <h1> Leadership </h1>
+        </div>
+        <div className='ss animate__animated animate__fadeInUp'>
+          <h1> Self-learning</h1>
+        </div>
+        <div className='animate__animated animate__fadeInUp'>
+          <h1> Adaptability  </h1>
+        </div>
+        <div className='ss animate__animated animate__fadeInUp'>
+          <h1> Comunication Skills</h1>
+        </div>
       </div>
     </div>
   )
