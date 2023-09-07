@@ -9,14 +9,11 @@
 }
 #root{
     /*Colors variables */
-   
     --main-color: purple ;
-    --bg-color: linear-gradient(to right, #904e95, #e96443);
     --second-color: white;
     --title-color:purple;
     --text-color:white;
     --body-color: linear-gradient(to right, #904e95, #e96443);
-    --container-color: rgb(233, 95, 118);
 
     /*Colors variables for dark mode */
 /*    
@@ -28,13 +25,8 @@
         --body-color:;
         --container-color; */
     
-    /*Container-sizing*/
-    --conteiner-width-xl: 100%;
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-ms:90%;
 
-        /* COLORS */
+        /* TOGGLE COLORS */
         --color: #9176FF;
         --dark-color: #2b2b2b;
         --dark-icon-color: #fff;

@@ -1,14 +1,24 @@
 /* CSS VARIABLES */
 
-/* Color mode used rgb
---main-color:  
---second-color: rgb(66, 66, 66);
---title-color;
---text-color;
---body-color;
---container-color; */
+#root{
 
-/* FONTS ANS TIPHOGRAPHY*/
+    --main-color: purple;
+    --second-color: white;
+    --title-color: purple;
+    --text-color: white;
+    --body-color:  linear-gradient(to right, #904e95, #e96443);
+    --container-color: linear-gradient(to right, #904e95, #e96443);
+    --bg-color: linear-gradient(to right, #904e95, #e96443);
+    --bg-nav: #13131344;
+}
+
+.darkmode{
+    background-color: var(--second-color);
+}
+
+.lightmode{
+    background-color: var(--main-color);
+}
 
 /*========== Main container ===========*/
 .App{
@@ -79,9 +89,14 @@
 }
 
 .stop{
-    color: white;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    color: var(--text-color);
+    font-family:Georgia;
 }
+
+.static{
+    color: var(--main-color)
+}
+
 .stop .static{
     display: flex;
     justify-content: right;
@@ -101,19 +116,19 @@
 .CV a{
     width: 7.5rem;
     height: 1.8rem;
-    border: white;
-    color: white;
+    border: var(--second-color);
+    color: var(--second-color);
     border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', sans-serif;
 }
 
 .CV:hover{
     width: 120px;
     height: 30px;
-    border: white;
+    border: var(--second-color);
     border-radius: .6rem .6rem .6rem .6rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: linear-gradient(to right, #904e95, #e96443)
+    font-family: 'Gill Sans MT', sans-serif;
+    background: var(--bg-color)
 }
 
 
@@ -124,7 +139,7 @@
     text-align: center;
     place-items: center;
     justify-content: center;
-    background-color: #13131344;
+    background-color: var(--bg-nav);
     backdrop-filter: blur(8px);
     border: none;
     border-radius: 40px;
@@ -135,7 +150,7 @@
     position: fixed;
     overflow: hidden;
     bottom:0;
-    color: pink;
+    color: var(--main-color);
 }
 
 nav Link {
@@ -148,7 +163,7 @@ nav Link {
 }
 
 nav a:hover {
-    background: linear-gradient(to right, #904e95, #e96443);
+    background:var(--bg-color);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -156,7 +171,7 @@ nav a:hover {
 }
 
 nav a.active{
-    background-color: purple;
+    background-color: var(--main-color);
 }
 
 
@@ -164,7 +179,7 @@ nav a.active{
 /*==========HEADER CSS==========*/
 
 .Header-main{
-    background-color: rgb(119, 17, 119);
+    background-color: var(--main-color);
     width: 100%;
     height: 4.3rem;
     display:flex;
@@ -199,7 +214,7 @@ nav a.active{
 } */
 
 .button1{
-  background-color: #751b75;
+  background-color: var(--main-color);
   width: 4rem;
   height: 1.9rem;
   padding: 0 0.5em;
@@ -214,7 +229,7 @@ nav a.active{
 }
 
 .btn__indicator{
-  background-color: #fff;
+  background-color: var(--second-color);
   width: 1.5em;
   height: 1.5em;
   border-radius: 50px;
@@ -241,17 +256,6 @@ nav a.active{
     color: var(--light-icon-color);
     font-size: 1rem;
   }
-
-/* -------------- ANIMATION ------------ */
-.btn__icon.animated{
-  animation: spin 0.5s;
-}
-
-@keyframes spin{
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* -------------- DARKMODE -------------- */
 .body .darkmode{
@@ -307,7 +311,7 @@ nav a.active{
 
 
 .title{
-    color: white;
+    color: var(--text-color);
 }
 
 .education-column{
@@ -325,7 +329,7 @@ nav a.active{
 
 .education-column .education-box{
     border-left: .1rem solid;
-    border-left: .1rem solid white;
+    border-left: .1rem solid var(--second-color);
 }
 
 .education-box .education-content{
@@ -341,23 +345,27 @@ nav a.active{
     left: -.4rem;
     width: .8rem;
     height: .8rem;
-    background: purple;
+    background: var(--main-color);
     border-radius: 50%;
 }
 
-/* @media only screen (min-width:300px) and (max-width:754px){
-   
-} */
-
-
 .content{
-    border: .2rem solid purple;
+    border: .2rem solid var(--main-color);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
+
+@media only screen and (min-width: 558px) and (max-width: 754px){
+    .content{
+    width: 500px;
+    justify-content: center;
+}
+}
+
+
 .education-content .content{
     position: relative;
     padding: 1.5rem;
-    border: .1rem solid purple;
+    border: .1rem solid var(--main-color);
     border-radius: .6rem;
     margin-bottom: 2rem;
     overflow: hidden;
@@ -370,20 +378,21 @@ nav a.active{
     left: 0;
     width: 0;
     height: 100%;
-    background: linear-gradient(to right, #904e95, #e96443);
+    background: var(--bg-color);
     opacity: 0,5%;
     z-index: -1;
     transition: 0.5s;
-    border: white;
+    border: var(--second-color);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 
 .education-content .content:hover::before{
     width: 100%;
 }
+
 .education-content .content .year{
     font-size: medium;
-    color: white;
+    color: var(--second-color);
     padding-bottom: .5rem;
 }
 
@@ -399,7 +408,7 @@ nav a.active{
     justify-content:center;
     padding: 5%;
     gap: 5%;
-    text-decoration: #ffffff;
+    text-decoration: var(--text-color);
     flex-wrap: wrap;
 }
 
@@ -417,7 +426,7 @@ nav a.active{
 
 .softskills{
     margin-top: 15%;
-    font: white;
+    font: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -428,7 +437,7 @@ nav a.active{
       flex: 100%;
     }
 h1.animate__animated.animate__fadeInUp {
-    color: white;
+    color: var(--text-color);
 }
 
 }
@@ -466,6 +475,7 @@ h1.animate__animated.animate__fadeInUp {
     width: 5.1rem;
     height: 6rem;
 }
+
 /*==========WORK=========*/
 
 
@@ -508,19 +518,19 @@ h1.animate__animated.animate__fadeInUp {
 }
 
 h1, strong{
-    color: rgb(255, 255, 255);
+    color: var(--second-color);
 }
 
 #spanh1{
-    color: purple;
+    color: var(--main-color);
 }
 
 input, textarea{
-    color: white;
+    color: var(--text-color);
 }
 #name, #email, #msg{
     background-color: transparent;
-    border: 1px purple solid;
+    border: 1px solid var(--main-color);
     text-align:center
 }
 
@@ -528,19 +538,19 @@ input, textarea{
     border-radius: 3.1rem;
     height: 1.5rem;
     width: 12.5rem;
-    text-decoration: white;
+    text-decoration: var(--text-color);
 }
 
 .name:hover{
-    background: linear-gradient(to right, #904e95, #e96443);
+    background: var(--bg-color);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 .email:hover{
-    background: linear-gradient(to right, #904e95, #e96443);
+    background: var(--bg-color);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 .message:hover{
-    background: linear-gradient(to right, #904e95, #e96443);
+    background: var(--bg-color);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 #msg{
@@ -555,14 +565,14 @@ form{
     border-radius: 2.5rem;
     justify-content:center;
     gap: 1rem;
-    border: 2px rgb(124, 13, 100) solid;
+    border: 2px solid var(--main-color);
     margin-top: .2rem;
     height: 18.75rem;
     width: 25rem;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-@media only screen and (min-width: 374px) and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
     form{
         display: flex;
         flex-direction: column;
@@ -570,7 +580,7 @@ form{
         border-radius: 2.5rem;
         justify-content:center;
         gap: 1rem;
-        border: 2px rgb(124, 13, 100) solid;
+        border: 2px solid var(--main-color);
         margin-top: .2rem;
         height: 18.75rem;
         width: 20rem;
@@ -581,7 +591,7 @@ form{
   
   
 .row{
-    border-color: white;
+    border-color: var(--second-color);
     align-items: center;
     width: 12.5rem;
     height: 2.5rem;
@@ -591,32 +601,32 @@ form{
     margin-top: 2%;
 }
 #submit{
-    border: 1px purple solid;
+    border: 1px solid var(--main-color);
     width: 5rem;
     border-radius: 2.5rem;
-    color: #ffffff;
-    background-color: purple;
+    color: var(--text-color);
+    background-color: var(--main-color);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
 }
 
 #submit:hover{
-    background: linear-gradient(to right, #904e95, #e96443);
+    background: var(--bg-color);
 }
 
 ::placeholder { 
-    color: white;
+    color: var(--second-color);
     opacity: 1; 
   }
 
 /*==========FOOTER CSS==========/*/
 
 .Footer-container {
-    background-color: rgb(119, 17, 119);
+    background-color: var(--main-color);
     width: 100%;
     display:flex;
     justify-content:start;
     font-size: small;
-    color: white;
+    color: var(--text-color);
 }
 
 #content{
@@ -641,14 +651,14 @@ p{
     right: 1em;
     background-color: transparent;
     font-size: xx-large;
-    color: #fff;
+    color: var(--second-color);
   }
   
   .animate__animated .animate__bounce .animate__infinite{
     
   }
 
-  @media ((max-width: 900px) (min-width: 300px)) {
+  @media ((max-width: 900px) and (min-width: 300px)) {
     .scroll-top {
       display: none;
     }

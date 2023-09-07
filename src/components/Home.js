@@ -15,7 +15,7 @@ export const Home = () => {
         <div className='stop'> <h1>Hi! I'm SAIRA</h1> </div> <br/>
         <div className='static'>
             <h2>
-                 <span style={{color:'purple'}}>
+                 <span>
                  <ReactTyped strings={["Web Developer","Political Scientist","Freelancer"]}
             typeSpeed={70}
             loopbackSpeed={10}

@@ -8,7 +8,6 @@ import femdev from '../img/femdev.png';
 const Header = () => {
     const [darkMode, setDarkMode] = useState(false);
     const [iconClass, setIconClass] = useState('btn__icon'); // Initial class for the icon
-    // const [isAnimated, setIsAnimated] = useState(false); //Animation for the icon
 
     useEffect(() => {
         const storedDarkMode = localStorage.getItem('darkmode');
@@ -25,15 +24,6 @@ const Header = () => {
         // // Set the class for the icon
         setIconClass(newDarkMode ? 'btn__icon FaRegMoon' : 'btn__icon BsSun');
         
-        // // Trigger animation by setting isAnimated to true
-        // setIsAnimated(true);
-
-        // // Remove the animation class after a delay
-        // setTimeout(() => {
-        //     setIsAnimated(false);
-        // }, 500);
-
-        // Optionally, you can add a class for animation here as well.
     };
 
     useEffect(() => {
