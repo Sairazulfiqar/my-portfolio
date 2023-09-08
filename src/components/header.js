@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import "../App.css";
+import "../index.css";
 import {BsSun} from 'react-icons/bs';
 import {FaRegMoon} from 'react-icons/fa';
 import femdev from '../img/femdev.png';
 
 
-const Header = () => {
+export const Header = () => {
     const [darkMode, setDarkMode] = useState(false);
-    const [iconClass, setIconClass] = useState('btn__icon'); // Initial class for the icon
-
+    
     useEffect(() => {
         const storedDarkMode = localStorage.getItem('darkmode');
         if (storedDarkMode !== null) {
@@ -20,10 +19,6 @@ const Header = () => {
         const newDarkMode = !darkMode;
         setDarkMode(newDarkMode);
         localStorage.setItem('darkmode', newDarkMode);
-
-        // // Set the class for the icon
-        setIconClass(newDarkMode ? 'btn__icon FaRegMoon' : 'btn__icon BsSun');
-        
     };
 
     useEffect(() => {

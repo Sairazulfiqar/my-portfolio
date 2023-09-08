@@ -7,23 +7,17 @@
     list-style:none;
     text-decoration: none;
 }
-#root{
-    /*Colors variables */
-    --main-color: purple ;
-    --second-color: white;
-    --title-color:purple;
-    --text-color:white;
-    --body-color: linear-gradient(to right, #904e95, #e96443);
+body{
+    --main-color: purple;
+    --second-color: white;        
+    --title-color: purple;
+    --text-color: white;
+    --body-color:  linear-gradient(to right, #904e95, #e96443);
+    --container-color: linear-gradient(to right, #904e95, #e96443);
+    --bg-color: linear-gradient(to right, #904e95, #e96443);
+    --bg-nav: #13131344;
+    --education-boxcolor: transparent
 
-    /*Colors variables for dark mode */
-/*    
-    --maindark-color:
-        --bg-color: white-;
-        --second-color:;
-        --title-color:;
-        --text-color:;
-        --body-color:;
-        --container-color; */
     
 
         /* TOGGLE COLORS */
@@ -35,12 +29,26 @@
 }
 
 body{
-    /* background: linear-gradient(to right, #904e95, #e96443); */
-    background-image: url(./img/Grapefruit\ Sunset.jpg) ;
+    background: linear-gradient(to right, #904e95, #e96443);
+    /* background-image: url(./img/Grapefruit\ Sunset.jpg) ;
     background-repeat: repeat repeat;
     background-size: 100%;
     background-attachment: fixed;
     width: 100%;
     margin:0px;
+    background-color: aqua; */
+}
+
+body.darkmode{
+    background: var(--dark-color);
+    --main-color: purple;
+    --second-color: white;        
+    --title-color: purple;
+    --text-color: white;
+    --body-color:  linear-gradient(to right, #904e95, #e96443);
+    --container-color: linear-gradient(to right, #904e95, #e96443);
+    --bg-color: linear-gradient(to right, #904e95, #e96443);
+    --bg-nav: #3c004444;
+    --education-color: purple;
 }
 

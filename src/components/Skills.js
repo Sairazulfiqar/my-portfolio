@@ -1,5 +1,4 @@
 import React from 'react'
-import ScrollAnimation from 'react';
 import reacticon from '../img/reacticon.png';
 import java from '../img/java.png';
 import html100 from '../img/html100.png';

@@ -1,24 +1,4 @@
-/* CSS VARIABLES */
 
-#root{
-
-    --main-color: purple;
-    --second-color: white;
-    --title-color: purple;
-    --text-color: white;
-    --body-color:  linear-gradient(to right, #904e95, #e96443);
-    --container-color: linear-gradient(to right, #904e95, #e96443);
-    --bg-color: linear-gradient(to right, #904e95, #e96443);
-    --bg-nav: #13131344;
-}
-
-.darkmode{
-    background-color: var(--second-color);
-}
-
-.lightmode{
-    background-color: var(--main-color);
-}
 
 /*========== Main container ===========*/
 .App{
@@ -173,8 +153,6 @@ nav a:hover {
 nav a.active{
     background-color: var(--main-color);
 }
-
-
 
 /*==========HEADER CSS==========*/
 
@@ -431,7 +409,7 @@ nav a.active{
 
 .hs{
     display: flex;
-    background-color: var(--container-color);
+    background-color: var(--main-color);
     border: purple 1px solid;
     border-radius: 20px 20px 20px 20px;
     text-align: center;
