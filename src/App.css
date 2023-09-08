@@ -390,13 +390,14 @@ nav a.active{
 }
 
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
+
     .flex-child2 .hardskills{
         display: flex;
         text-align: justify;
         flex-wrap: wrap;
-        gap: 
     }
-    }
+
+}
 
 .hardskills{
     display: flex;
