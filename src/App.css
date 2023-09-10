@@ -42,7 +42,9 @@
 
 .button{
     display:flex;
-    gap:5%;
+    justify-content: center;
+    width: 20rem;
+    gap:10%;
     margin:0;
     padding:0;
     top:50%;
@@ -54,7 +56,7 @@
 }
 
 .button:hover{
-    filter: drop-shadow(0 0 1em #904e95)
+    filter: drop-shadow(0 0 1rem #904e95)
 }
  
 .icon{
@@ -183,13 +185,7 @@ nav a.active{
   box-sizing: border-box;
 }
 
-/* body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: var(--light-color);
-} */
+
 
 .button1{
   background-color: var(--main-color);
@@ -328,6 +324,9 @@ nav a.active{
 }
 
 .content{
+    color: var(--second-color);
+}
+.content{
     border: .2rem solid var(--main-color);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
@@ -378,6 +377,9 @@ nav a.active{
     font-size: medium;
 }
 
+.Location .experience{
+    color: var(--second-color);
+}
 
 /*=========SKILLS CSS/=========*/
 .flex-child2 {
@@ -391,7 +393,7 @@ nav a.active{
 
 @media only screen and (min-width: 300px) and (max-width: 1000px) {
 
-    .flex-child2 .hardskills{
+    .flex-child2 {
         display: flex;
         text-align: justify;
         flex-wrap: wrap;
@@ -404,8 +406,14 @@ nav a.active{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10%;
     gap: 3rem;
+}
+
+.hsbox{
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+    color: var(--second-color);
+    margin-bottom: 5%;
 }
 
 .hs{
@@ -421,17 +429,37 @@ nav a.active{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-
-.softskills{
-    margin-top: 15%;
-    font: var(--text-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: small;
+.ssbox{
+    margin-top: 5%;
     color: var(--second-color);
 }
 
+.ss {
+    display: flex;
+    align-content: center; 
+    justify-content:center;
+}
+
+.softskills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: large;
+    column-gap: 2%;
+    color: var(--second-color);
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 1000px) {
+
+    .hardskills {
+        display: flex;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+
+}
 @media (max-width: 2150px) {
     .hardskills, .softskills {
       flex: 100%;
@@ -442,11 +470,6 @@ h1.animate__animated.animate__fadeInUp {
 
 }
 
-/* .softskills .animate__animated.animate__fadeInUp {
-  animation-name: fadeInUp;
-  --animate-duration: 8s;
-  color: var(--second-color);
-} */
 
 #python{
     width: 5.6rem;
@@ -493,7 +516,7 @@ h1.animate__animated.animate__fadeInUp {
   
   } 
   
-  /* Extra small devices (phones, 600px and down)  */
+  /* Extra small devices (phones and down)  */
    @media only screen and (min-width:380) and (max-width: 767px) {
       .carousel-inner {
       height: 160px;

@@ -3,7 +3,7 @@ import "../App.css";
 import data from "./data.json";
 
 export const Education = () => {
-  const [jsonData, setJsonData] = useState(data)
+  // const [jsonData, setJsonData] = useState(data)
 
   return (
 
@@ -70,7 +70,7 @@ export const Education = () => {
                 <div className='Location'> {data.workexperience.map((workexperience) => {
                   return <p> {workexperience.location1}</p>
                 })} </div>
-                <div> {data.workexperience.map((workexperience) => {
+                <div className='experience'> {data.workexperience.map((workexperience) => {
                   return <h3> {workexperience.company1}</h3>
                 })} </div>
               </div>

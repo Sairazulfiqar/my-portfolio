@@ -12,6 +12,9 @@ export const Skills = () =>{
   return (
  
     <div className="flex-child2" id="Skills">   
+      <div className='hsbox animate__animated animate__fadeInUp'>
+        <h1>HARD SKILLS </h1> <br/>
+      </div> <br/>
       <div className='hardskills'>
         <div className='hs animate__animated animate__fadeInUp'>
           <img src={html100} alt='' id='html100' />
@@ -31,6 +34,10 @@ export const Skills = () =>{
         <div className='hs animate__animated animate__fadeInUp'>
           <img src={mysql} alt='' id='mysql'/>
         </div>
+      </div> <br/>
+      <br/>
+      <div className='ssbox animate__animated animate__fadeInUp'>
+        <h1>SOFT SKILLS </h1> <br/>
       </div>
 
       <div className='softskills'>
@@ -43,7 +50,7 @@ export const Skills = () =>{
         <div className='ss animate__animated animate__fadeInUp'>
           <h1> Self-learning</h1>
         </div>
-        <div className='animate__animated animate__fadeInUp'>
+        <div className='ss animate__animated animate__fadeInUp'>
           <h1> Adaptability  </h1>
         </div>
         <div className='ss animate__animated animate__fadeInUp'>
